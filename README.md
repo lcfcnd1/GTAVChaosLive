@@ -95,8 +95,8 @@ Never use the mod in GTA Online. Do not modify the GTA executable, Rockstar Laun
 The Enhanced build validates the GTA executable version and compiles against the installed ScriptHookVDotNet Enhanced assembly:
 
 ```powershell
-$gta = 'E:\SteamLibrary\steamapps\common\Grand Theft Auto V Enhanced'
-$out = '.\data\experimental-dependencies\gta-chaos-live-enhanced-build-v7-ack-fix\GtaChaosLive.dll'
+$gta = '<GTA_V_ENHANCED_DIRECTORY>'
+$out = '.\data\experimental-dependencies\gta-chaos-live-build\GtaChaosLive.dll'
 powershell -NoProfile -ExecutionPolicy Bypass -File .\mods\gta-chaos-live\build-enhanced-v7.ps1 -GtaPath $gta -OutputPath $out
 ```
 
@@ -137,11 +137,29 @@ The overlay authenticates over the orchestrator WebSocket and renders alerts onl
 
 See [docs/SECURITY.md](docs/SECURITY.md), [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md), [docs/TESTING.md](docs/TESTING.md), and [docs/PROGRESS.md](docs/PROGRESS.md) for supporting records.
 
-## GitHub publication checklist
+## Using the project
 
-Before adding a remote or pushing:
+1. Install the required runtimes and official GTA mod dependencies.
+2. Clone the repository and install the JavaScript workspace dependencies.
+3. Run the local orchestrator, dashboard, and overlay.
+4. Configure the local authentication token without committing it.
+5. Use the installer diagnostics before installing anything into the GTA directory.
+6. Start GTA V Enhanced in Story Mode only and verify the mod connection.
+7. Use the dashboard or documented local smoke tests to send controlled effects.
 
-- Review `.gitignore` and confirm no token, local database, log, staging archive, DLL, or executable is staged.
-- Review the staged diff for accidental machine-specific paths.
-- Decide whether the repository should include a license and add it explicitly.
-- Add the GitHub remote only after confirming the repository URL and intended visibility.
+The repository intentionally does not include compiled mod binaries, local tokens, game files, staging archives, or user databases. These must be obtained or generated locally according to the installation and compatibility documentation.
+
+## Contributing
+
+Contributions are welcome. Before opening a pull request:
+
+- Keep secrets, tokens, local databases, logs, game files, compiled binaries, and staging artifacts out of Git.
+- Keep GTA-native calls on the ScriptHookVDotNet game-safe path; do not add network-thread native execution.
+- Add or update automated tests for protocol, persistence, UI, or connector changes.
+- Preserve the distinction between simulated tests and evidence from a real GTA Story Mode session.
+- Document dependency versions and compatibility changes.
+- Run the relevant typechecks, builds, and tests listed above.
+
+## License
+
+This repository is distributed under the license in [LICENSE](LICENSE).
