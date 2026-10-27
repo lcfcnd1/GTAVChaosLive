@@ -1,0 +1,19 @@
+[package]
+name = "gta-chaos-live"
+version = "0.1.0"
+description = "GTA Chaos Live desktop control room"
+authors = ["GTA Chaos Live"]
+edition = "2021"
+
+[lib]
+name = "gta_chaos_live_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.5", features = [] }
+
+[dependencies]
+tauri = { version = "2.1.1", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4"] }

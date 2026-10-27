@@ -1,0 +1,10 @@
+{
+  "name": "@gta-chaos/orchestrator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "tsx src/index.ts", "dev:mock-gta": "tsx src/mock-gta.ts", "profile": "tsx src/profile-cli.ts", "test": "tsx --test src/*.test.ts", "typecheck": "tsc --noEmit" },
+  "dependencies": { "@gta-chaos/protocol": "workspace:*", "ws": "^8.18.0" },
+  "engines": { "node": ">=22.5" },
+  "devDependencies": { "@types/node": "^22.10.5", "@types/ws": "^8.5.13", "tsx": "^4.19.2" }
+}

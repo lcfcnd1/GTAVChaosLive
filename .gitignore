@@ -1,0 +1,43 @@
+node_modules/
+.venv*/
+dist/
+.pnpm-store/
+*.user
+*.suo
+bin/
+obj/
+*.log
+__pycache__/
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+**/*.token
+**/local-processes.json
+
+# Runtime state and test artifacts
+*.db
+*.db-*
+data-appdata-test/
+data/diagnostics/
+data/installer-test-temp/
+data/logs/
+data/profile-*/
+data/pyinstaller-build/
+data/tiktok-connector.spec
+data/token-install-plan.json
+data/transport-harness/
+data/experimental-dependencies/
+
+# Generated desktop/runtime output
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/runtime/
+apps/desktop/src-tauri/*.json.bak
+
+# Native/generated binaries; source and build metadata remain versionable
+*.dll
+*.exe
+*.pdb
+*.msi
+*.zip

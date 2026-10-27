@@ -1,0 +1,7 @@
+{
+  "name": "@gta-chaos/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": { "build:runtime": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ..\\..\\tools\\build-runtime.ps1", "build:frontend": "pnpm --filter @gta-chaos/dashboard build", "tauri:dev": "pnpm build:frontend && tauri dev", "tauri:build": "pnpm build:runtime && pnpm build:frontend && tauri build" },
+  "devDependencies": { "@tauri-apps/cli": "^2.2.4" }
+}

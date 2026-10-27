@@ -1,0 +1,41 @@
+{
+  "gameVersion": "1.0.1158.16",
+  "files": [
+    {
+      "name": "ScriptHookV.dll",
+      "sourceUrl": "https://www.dev-c.com/gtav/scripthookv",
+      "sha256": "REEMPLAZAR_CON_HASH_DEL_ARCHIVO_OFICIAL",
+      "fileVersion": "REEMPLAZAR_CON_VERSION_DE_ARCHIVO"
+    },
+    {
+      "name": "dinput8.dll",
+      "sourceUrl": "https://www.dev-c.com/gtav/scripthookv",
+      "sha256": "REEMPLAZAR_CON_HASH_DEL_ARCHIVO_OFICIAL"
+    },
+    {
+      "name": "ScriptHookVDotNet.asi",
+      "sourceUrl": "https://github.com/Chiheb-Bacha/ScriptHookVDotNetEnhanced/releases/",
+      "sha256": "REEMPLAZAR_CON_HASH_DEL_ARCHIVO_OFICIAL"
+    },
+    {
+      "name": "ScriptHookVDotNet2.dll",
+      "sourceUrl": "https://github.com/Chiheb-Bacha/ScriptHookVDotNetEnhanced/releases/",
+      "sha256": "REEMPLAZAR_CON_HASH_DEL_ARCHIVO_OFICIAL"
+    },
+    {
+      "name": "ScriptHookVDotNet3.dll",
+      "sourceUrl": "https://github.com/Chiheb-Bacha/ScriptHookVDotNetEnhanced/releases/",
+      "sha256": "REEMPLAZAR_CON_HASH_DEL_ARCHIVO_OFICIAL"
+    },
+    {
+      "name": "ScriptHookVDotNet.ini",
+      "sourceUrl": "https://github.com/Chiheb-Bacha/ScriptHookVDotNetEnhanced/releases/",
+      "sha256": "REEMPLAZAR_CON_HASH_DEL_ARCHIVO_OFICIAL"
+    },
+    {
+      "name": "MinHook.x64.dll",
+      "sourceUrl": "https://github.com/Chiheb-Bacha/ScriptHookVDotNetEnhanced/releases/",
+      "sha256": "REEMPLAZAR_CON_HASH_DEL_ARCHIVO_OFICIAL"
+    }
+  ]
+}

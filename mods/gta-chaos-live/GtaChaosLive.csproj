@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <RootNamespace>GtaChaosLive</RootNamespace>
+    <AssemblyName>GtaChaosLive</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Configure GTA_V_DIR locally; third-party binaries are intentionally not committed. -->
+    <Reference Include="ScriptHookVDotNet3"><HintPath>$(GTA_V_DIR)\ScriptHookVDotNet3.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

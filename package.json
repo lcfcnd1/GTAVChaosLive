@@ -1,0 +1,17 @@
+{
+  "name": "gta-chaos-live",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev:orchestrator": "pnpm --filter @gta-chaos/orchestrator dev",
+    "dev:mock-gta": "pnpm --filter @gta-chaos/orchestrator dev:mock-gta",
+    "dev:overlay": "pnpm --filter @gta-chaos/overlay-server dev",
+    "dev:dashboard": "pnpm --dir apps/dashboard dev",
+    "test:python": ".venv-tiktok\\Scripts\\python.exe -m unittest services/tiktok-connector/test_connector.py",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

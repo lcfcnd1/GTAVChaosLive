@@ -1,0 +1,24 @@
+{
+  "name": "@gta-chaos/dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@gta-chaos/protocol": "workspace:*",
+    "@tauri-apps/api": "^2.1.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.2"
+  }
+}
